@@ -1,3 +1,4 @@
+// Copyright 2023 UNN-IASR
 #pragma once
 #include <iostream>
 #include <string>
@@ -9,7 +10,7 @@ using std::string;
 class Automata {
  public:
         STATES state;
-        int cash;  
+        int cash;
         const string menu[10] = {
             "Espresso",
             "Americano",
@@ -29,8 +30,8 @@ class Automata {
 
  public:
         Automata();
-        void on();  // - включение 
-        void off();  // - выключение 
+        void on();  // - включение
+        void off();  // - выключение
         void coin(int x);  // - занесение денег на счёт пользователем
         void getMenu();  // - считывание меню
         void getState();  // - считывание текущего состояния для пользователя
